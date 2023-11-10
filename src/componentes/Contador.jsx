@@ -15,8 +15,7 @@ export default ({ inicial = 0, passo = 1 }) => {
         setNumero(numero - passo);
     }
 
-    const parImpar = _=> numero % 2 == 0 ? setResultado("Par") 
-                                         : setResultado("Impar");
+    const parImpar = _=> numero % 2 == 0 ? setResultado("O número é Par") : setResultado("O número é Impar");
 
     return (
         <>
@@ -36,7 +35,7 @@ export default ({ inicial = 0, passo = 1 }) => {
                     onPress={dec}
                 />
                 <Button
-                    title="%"
+                    title="Par ou Ímpar"
                     onPress={parImpar}
                 />
             </View>
